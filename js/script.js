@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function showLastViewedCategory() {
         if (lastViewedCategory === 'local' && localChannelList) {
-            nepaliChannelList.style.display = 'grid';
+            localChannelList.style.display = 'grid';
         } else if (lastViewedCategory === 'hindi' && hindiChannelList) {
             hindiChannelList.style.display = 'grid';
         } else if (lastViewedCategory === 'movies' && moviesList) {
