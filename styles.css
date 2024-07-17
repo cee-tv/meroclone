@@ -412,7 +412,7 @@ r */
     }
 
     #search-input {
-        width: 100%; /* Full width for input */
+        width: 80%; /* Full width for input */
         padding: 8px;
         font-size: 16px;
         border: 2px solid #ccc;
