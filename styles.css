@@ -217,11 +217,12 @@ body::before {
 }
 
 .channel-list li img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    margin-bottom: 4px;
+    margin-top: 6px;
+    }
 
 /* Movie List */
 .movie-list {
