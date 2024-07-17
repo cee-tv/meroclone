@@ -278,7 +278,7 @@ body::before {
 
 /* Video JS Player controls background */
 .video-js .vjs-control-bar {
-    background-color: #ff6666 !important;
+    background-color: #000 !important;
 }
 
 .video-js {
