@@ -263,7 +263,7 @@ body::before {
     margin-top: 20px;
     margin: 20px auto;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #242424;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -273,7 +273,7 @@ body::before {
 }
 
 .back-button:hover {
-    background-color: #0056b3;
+    background-color: #8d8d8d;
 }
 
 /* Video JS Player controls background */
