@@ -47,7 +47,7 @@ body::before {
 }
 
 .button-container button:hover {
-    background-color: #0056b3;
+    background-color: #8d8d8d;
     transform: scale(1.05);
 }
 
