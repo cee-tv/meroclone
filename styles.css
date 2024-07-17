@@ -488,10 +488,11 @@ r */
     }
 
     .button-container button {
-        width: 42%; /* Make buttons full-width */
+        margin: 0.1px;       
+        width: auto; /* Make buttons full-width */
         padding: 1px 2px;
-        font-size: 16px;
-        border-radius: 5px; /* Round the corners slightly for a better touch experience */
+        font-size: 20px;
+        border-radius: 8px; /* Round the corners slightly for a better touch experience */
         background-color: #000000;
         color: #ffffff;
         border: none;
