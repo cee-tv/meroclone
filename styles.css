@@ -425,7 +425,7 @@ r */
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         gap: 5px; /* Add some space between items */
         padding: 2px; /* Add padding for better spacing */
-        max-height: 50vh; /* Limit height to 50% of viewport height */
+        max-height: 30vh; /* Limit height to 50% of viewport height */
         overflow-y: auto; /* Enable vertical scrolling */
     }
 
