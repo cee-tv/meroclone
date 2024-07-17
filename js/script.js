@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     var player = videojs('video-player');
-    var nepaliChannelList = document.getElementById('nepali-channel-list');
+    var localChannelList = document.getElementById('local-channel-list');
     var hindiChannelList = document.getElementById('hindi-channel-list');
     var moviesList = document.getElementById('movies-list');
     var playerWrapper = document.getElementById('player-wrapper');
     var notification = document.querySelector('.side-text');
     var buttonContainer = document.querySelector('.button-container');
-    var nepaliChannelsBtn = document.getElementById('nepali-channels-btn');
+    var localChannelsBtn = document.getElementById('local-channels-btn');
     var hindiChannelsBtn = document.getElementById('hindi-channels-btn');
     var moviesBtn = document.getElementById('movies-btn');
     var searchInput = document.getElementById('search-input');
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to filter items based on search input
     function filterItems() {
         var query = searchInput.value.toLowerCase();
-        filterList(nepaliChannelList, query);
+        filterList(localChannelList, query);
         filterList(hindiChannelList, query);
         filterList(moviesList, query);
         hideNotification(); // Hide notification when searching
@@ -65,9 +65,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Event listeners for category buttons
-    if (nepaliChannelsBtn) {
-        nepaliChannelsBtn.addEventListener('click', function() {
-            showCategory('nepali');
+    if (localChannelsBtn) {
+        localChannelsBtn.addEventListener('click', function() {
+            showCategory('local');
         });
     }
 
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function showCategory(category) {
         lastViewedCategory = category;
 
-        if (nepaliChannelList) nepaliChannelList.style.display = category === 'nepali' ? 'grid' : 'none';
+        if (localChannelList) localChannelList.style.display = category === 'local' ? 'grid' : 'none';
         if (hindiChannelList) hindiChannelList.style.display = category === 'hindi' ? 'grid' : 'none';
         if (moviesList) moviesList.style.display = category === 'movies' ? 'grid' : 'none';
         hideNotification(); // Ensure notification is hidden
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    addChannelClickListener(nepaliChannelList);
+    addChannelClickListener(localChannelList);
     addChannelClickListener(hindiChannelList);
     addChannelClickListener(moviesList);
 
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function showLastViewedCategory() {
-        if (lastViewedCategory === 'nepali' && nepaliChannelList) {
+        if (lastViewedCategory === 'local' && localChannelList) {
             nepaliChannelList.style.display = 'grid';
         } else if (lastViewedCategory === 'hindi' && hindiChannelList) {
             hindiChannelList.style.display = 'grid';
