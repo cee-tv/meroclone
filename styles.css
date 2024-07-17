@@ -217,12 +217,11 @@ body::before {
 }
 
 .channel-list li img {
-    width: 50px;
-    height: 50px;
-    border-radius: 10%;
-    margin-bottom: 4px;
-    margin-top: 6px;
-    }
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
 
 /* Movie List */
 .movie-list {
@@ -255,11 +254,10 @@ body::before {
 }
 
 .movie-list li img {
-    width: 50px;
-    height: 50px;
-    border-radius: 10%;
-    margin-bottom: 4px;
-    margin-top: 6px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 5px;
 }
 
 /* Ensure movie name is displayed within the same box */
@@ -449,8 +447,9 @@ r */
     .channel-list li img, .movie-list li img {
         width: 50px;
         height: 50px;
-        border-radius: 50%;
-        margin-bottom: 7px;
+        border-radius: 10%;
+        margin-bottom: 4px;
+        margin-top: 6px;
     }
 
     .movie-list li p {
