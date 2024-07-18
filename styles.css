@@ -206,8 +206,8 @@ body::before {
 .channel-list li,
 .movie-list li {
     padding: 10px;
-    background-color: #ffffff;
-    color: #333;
+    background-color: #2f3543;
+    color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
